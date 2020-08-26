@@ -1,0 +1,33 @@
+[{
+        "name": "msSql",
+        "type": "mssql",
+        "host": "s123",
+        "username": "1cApplicationServer",
+        "password": "1c_proc_1c",
+        "database": "Basa Piter Plus",
+        "synchronize": false,
+        "logging": false,
+        "entities": [
+            "src/entity/mssql/**/*.ts"
+        ],
+        "migrations": [
+            "src/migration/**/*.ts"
+        ],
+        "subscribers": [
+            "src/subscriber/**/*.ts"
+        ],
+        "cli": {
+            "entitiesDir": "src/entity/mssql",
+            "migrationsDir": "src/migration",
+            "subscribersDir": "src/subscriber"
+        }
+    },
+    {
+        "name": "SQlite",
+        "type": "sqlite",
+        "database": "./sqlite/tokens.db",
+        "entities": [
+            "src/entity/sqlite/**/*.ts"
+        ]
+    }
+]
